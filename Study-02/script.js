@@ -36,3 +36,34 @@ console.log(!!2);
 
 var money
 console.log(money);
+
+function printScreen1() {
+    console.log("İlk ekran çıktısı");
+}
+
+function printScreen2(callback1, callback2) {
+    setTimeout(function () {
+        callback1();
+        console.log("İkinci ekran çıktısı")
+        callback2();
+    }, 3000);
+}
+
+function printScreen3() {
+    console.log("Üçüncü ekran çıktısı");
+}
+
+
+printScreen2(printScreen1, printScreen3);
+
+
+function main() {
+    function ayse() {
+
+    }
+    function selami() {
+
+    }
+}
+
+ayse()
